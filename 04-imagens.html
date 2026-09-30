@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre imagens</title>
+</head>
+<body>
+    <h1>Trabalhando com imagens</h1>
+    <hr>
+
+    <p>Trabalhando com o elemento de &lt;img&gt;</p>
+    <img src="por-do-sol.jpg" alt="Lindo por do sol com cores vibrantes no mar." width="500"> 
+
+    <p>Entendendo os atributos</p>
+    <ul> 
+        <li><strong>src</strong>Source/fonte: É o caminho onde a imagem está hospedada/armazenada. Pode ser um caminho local ou um link direto da internet.</li>
+
+        <li><strong>alt</strong>Alta/alternative: É uma breve descrição da imagem. É crucial para a<strong>acessibilidade</strong>e como fallback(plano B).</li>
+    </ul>
+
+    <h2>Trabalhando com resources externos</h2>
+    <p>Configurando imagens externas</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnZdCIQQCD8dwkRJs5BlAN2gMP4imD3yCXKhUR48_aAg&s=10" alt="Praia com coqueiros com folhas verdes e uma bela composição entre o céu azul e o mar." height="500">
+
+    <h2>Outras abordagens</h2>
+    <h3> Elemento de figure</h3>
+    <figure>
+        <img src="por-do-sol.jpg" alt="Lindo por do sol com cores vibrantes no mar." width="600" height="400">
+        <figcaption> Pôr do sol no Ceará - foto: Nicolly M. </figcaption>
+    </figure>
+
+    <h3>Elemento picture</h3>
+    <p> Utilizamos o elemento &lt;picture&gt; serve para controlarmos qual arquivo arquivo sera utilizado de acordo com determinadas condições. </p>
+
+    <picture>
+        <source media="(max-width: 600px)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnZdCIQQCD8dwkRJs5BlAN2gMP4imD3yCXKhUR48_aAg&s=10">
+
+        <source media="(min-width: 6001px)" srcset="por-do-sol.jpg"> 
+
+        <img src="por-do-sol,jpg" alt="Belo pôr do sol no Ceará" width="500">
+    </picture>
+
+    <hr>
+    <h2>Sobre os tipos de imagens</h2>
+    <p>Você pode encontrar um acervo muito grande de tipos de imagens, a escolha da imagem correta pode elevar a performace do seu site. Veja a lista abaixo:</p>
+    <ul>
+        <li><strong>JPEG/JPG</strong>: Bom para fotografias, produtos fotografadosimagens com muitas cores e detalhes. Se você tentar otimizar demais, a perda de qualidade se torna vísivel.</li>
+
+        <li><strong>PNG</strong>: Suporta tranparência e é muito bom para imagens que precisam preservar certos detalhes. Por exemplo: logos, imagens que precisam de transparência e etc.</li>
+
+        <li><strong>WEBP</strong>: Formato recente desenvolvido com foco na web. Além de tambem suportar transparência, também consegue trabalhar com imagens em alta definição. Exelente escolha para fotografias, imagens de produtos, imagens com transparéncia e imagens geraís.</li>
+
+        <li><strong>WEBP</strong>: É formato mais recente e também muito eficiente. É exelente, para fotopgrafias, imagens grandes, sites onde desempenho e economia de dados são extremamente importantes.</li>
+        
+        <li><strong>SVG</strong>: É um elemneto vetorial, exelente para logos, icones, simbolos e etc.</li>
+    </ul>
+
+</body>
+</html>

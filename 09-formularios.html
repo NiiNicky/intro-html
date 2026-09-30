@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="É um documento com espaços ou campos predefinidos que servem para coletar, registrar e organizar informações de maneira estruturada.">
+    <title>Sobre formulários</title>
+
+    <body>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body{
+            color: rgb(54, 11, 44);
+            font-family: sans-serif;
+            background-color: rgb(255, 184, 229);
+        }
+
+        header{
+            background-color: rgb(255, 164, 228);
+        }
+
+        section{
+            border: 4px solid rgb(202, 134, 205);
+            background-color: rgb(255, 181, 232);
+            padding: 20px;
+        }
+
+        footer{
+            background-color: rgb(56, 12, 54);
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1> Sobre formulários</h1>
+    </header>
+
+    <main>
+        <section>
+        <h2> O que são formulários?</h2>
+        <p> Os formulários são uma das partes mais importantes do nosso <abbr title="HyperText Markup Language">HTML</abbr> semântico. Ele serve para:</p>
+
+        <ul>
+            <li> Entrada de dados</li>
+            <li> Interação</li>
+            <li>Acessibilidade</li>
+            <li> Validação e envio de informações</li>
+        </ul>
+        </section>
+
+        <section>
+            <h2> Como trabalhar com um form em HTML?</h2>
+            <p>Para comerçarmos a trabalhar com u formulário dentro do HTML, utilizamos o elemento de &lt;Form&gt; .</p>
+
+            <p> Esse elemento, representa um formulário interativo.</p>
+
+            <h3> Criando a estrutura </h3>
+
+            <form>
+
+            <input type="text"> <br>
+
+            <label for="nome">nome</label> <br>
+            <input type="text" name="nome" id="nome"> <br>
+
+            <label for="email">email</label> <br>
+            <input type="email" name="email" id="email"> <br>
+
+            <input type="date"> <br>
+
+            <input type="tel" name="" id=""> <br>
+
+            <label>
+                <input type="checkbox" name="" id="">
+                Aceito os termos de uso do site
+            </label>
+
+            <button type="submit"> Enviar Formulário </button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2> Formulários agrupados</h2>
+            <p> Para criarmos formulários agrupando, utilizamos o elemento &lt;Fieldset&gt; e &lt;legend&gt;.</p>
+
+            <form action="">
+                <fieldset>
+                    <legend> Informações pessoais </legend>
+                        <label for="Nome">Nome</label> <br>
+                        <input type="text" name="nome" id="nome" placeholder="Nicky Menezes"> <br>
+
+                        <label for="email">Email</label> <br>
+                        <input type="email" name="email" id="email" placeholder="nickygamer@gmail.com"><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Endereço </legend>
+
+                    <label for="cep">CEP</label> <br>
+                    <input type="text"  name="cep" id="cep" placeholder="87654-321"> <br>
+
+                    <label for="Rua">Rua</label> <br>
+                    <input type="text" name="Rua" id="Rua" placeholder="Rua bem ali" required> <br>
+
+                    <input type="checkbox" name="css" id="css" required>
+
+                    <label for="javascript"> JavaScript</label><br>
+                    <input type="checkbox" name="javascript" id="javascript" required><br>
+
+                    html=on&
+                    css=on&
+                    javascript=on
+                    &estado=rj
+                    <label for="estado">Selecione um estado</label>
+                    <select name="estado" id="estado">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Ninas Gerais</option>
+                        </select>
+
+                </fieldset>
+
+                <button type="submit">Enviar dados</button> tyui
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
